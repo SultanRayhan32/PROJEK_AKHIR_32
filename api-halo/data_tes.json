@@ -1,0 +1,108 @@
+{
+    "keranjangtes": [
+        {
+          "id": 1,
+          "idUsers": 3,
+          "idProduk": 1,
+          "harga": 
+            1500000,
+          "qty": 1,
+          "totalHarga": 1500000,
+          "namaProduk": 
+            "Jaket Pria"
+        },
+        {
+          "id": 2,
+          "idUsers": 1,
+          "idProduk": 2,
+          "harga": 
+            1000000
+          ,
+          "qty": 1,
+          "totalHarga": 1000000,
+          "namaProduk": 
+            "Jaket Pria 2"
+        },
+        {
+          "id": 3,
+          "idUsers": 2,
+          "idProduk": 10,
+          "harga": 
+            4000000
+          ,
+          "qty": 1,
+          "totalHarga": 4000000,
+          "namaProduk": 
+            "Kemeja Putih"
+        },
+        {
+          "id": 1,
+          "idUsers": 3,
+          "idProduk": 1,
+          "harga": 
+            1500000,
+          "qty": 1,
+          "totalHarga": 1500000,
+          "namaProduk": 
+            "Jaket Pria"
+        }
+      ],
+      "keranjang": [
+        {
+          "id": 1,
+          "idUsers": 3,
+          "idProduk": 1,
+          "harga": [
+            1500000,
+            3700000
+          ],
+          "qty": 1,
+          "totalHarga": 1500000,
+          "namaProduk": [
+            "Jaket Pria",
+            "Kemeja Biru"
+          ]
+        },
+        {
+          "id": 2,
+          "idUsers": 1,
+          "idProduk": 2,
+          "harga": [
+            1000000
+          ],
+          "qty": 1,
+          "totalHarga": 1000000,
+          "namaProduk": [
+            "Jaket Pria 2"
+          ]
+        },
+        {
+          "id": 3,
+          "idUsers": 2,
+          "idProduk": 10,
+          "harga": [
+            4000000
+          ],
+          "qty": 1,
+          "totalHarga": 4000000,
+          "namaProduk": [
+            "Kemeja Putih"
+          ]
+        },
+        {
+          "id": 1,
+          "idUsers": 3,
+          "idProduk": 1,
+          "harga": [
+            1500000,
+            3700000
+          ],
+          "qty": 1,
+          "totalHarga": 1500000,
+          "namaProduk": [
+            "Jaket Pria",
+            "Kemeja Biru"
+          ]
+        }
+      ]
+}

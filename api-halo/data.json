@@ -1,0 +1,428 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Baron",
+      "password": "buntingesot",
+      "email": "bunting@ngesot.com"
+    },
+    {
+      "id": 2,
+      "username": "Bernacle",
+      "password": "bernackleturu",
+      "email": "turuterus@neh.com"
+    },
+    {
+      "id": 3,
+      "username": "Sultan",
+      "password": "sususapi",
+      "email": "lol@not.com"
+    },
+    {
+      "username": "dfsdfsd",
+      "email": "fdsfdsfdsf",
+      "password": "dsfdsfds",
+      "phone": "12431433",
+      "id": 4
+    },
+    {
+      "username": "mihawk",
+      "email": "dsfdsfdsfds",
+      "password": "dsfdsfds",
+      "phone": "99999999999",
+      "id": 5
+    },
+    {
+      "username": "spetnaz",
+      "email": "spetnas1@gmail.com",
+      "password": "12345678",
+      "phone": "08999999",
+      "id": 6
+    },
+    {
+      "username": "Hanji",
+      "email": "Hanjilol@yahuu.cot",
+      "password": "makan",
+      "phone": "9999999",
+      "id": 7
+    },
+    {
+      "username": "fdsfdsf",
+      "email": "sdfdsfd@ijiji.com",
+      "password": "lol",
+      "phone": "444444",
+      "id": 8
+    },
+    {
+      "username": "dsfdsf",
+      "email": "222",
+      "password": "lol",
+      "phone": "999",
+      "id": 9
+    },
+    {
+      "username": "llll",
+      "email": "llll@ho,com",
+      "password": "9999",
+      "phone": "9999",
+      "id": 10
+    },
+    {
+      "username": "DDD",
+      "email": "DDDD",
+      "password": "DDD",
+      "phone": "9999",
+      "id": 11
+    },
+    {
+      "username": "hhhh",
+      "email": "hh@gmail.coom",
+      "password": "makan",
+      "phone": "99999",
+      "id": 12
+    },
+    {
+      "username": "fsdfdsf111111",
+      "email": "dsffs",
+      "password": "loo",
+      "phone": "11111",
+      "id": 13
+    },
+    {
+      "username": "dsfdsfds",
+      "email": "1111",
+      "password": "dfdsfds",
+      "phone": "12121212",
+      "id": 14
+    },
+    {
+      "username": "Kapten Kidd",
+      "email": "kid@gmail.com",
+      "password": "9999",
+      "phone": "08292920101",
+      "id": 15
+    },
+    {
+      "username": "Luffy",
+      "email": "ffdsf@tahu.com",
+      "password": "1010",
+      "phone": "9999",
+      "id": 16
+    },
+    {
+      "username": "lontong",
+      "email": "longonbadisj@kjsjsijf.com",
+      "password": "9999",
+      "phone": "999999999999",
+      "id": 17
+    },
+    {
+      "username": "sfdsf",
+      "email": "sdfdsf",
+      "password": "dsdsf",
+      "phone": "22",
+      "id": 18
+    },
+    {
+      "username": "dsfdsaf",
+      "email": "dfdsfa",
+      "password": "sdfdsf",
+      "phone": "2222",
+      "id": 19
+    },
+    {
+      "username": "Sultan1",
+      "email": "anjing@afkdsfdsf.com",
+      "password": "fdfdadfda",
+      "phone": "191101010010101010",
+      "id": 20
+    },
+    {
+      "username": "londo",
+      "email": "londokampung@sby.com",
+      "password": "londoku",
+      "phone": "99999",
+      "id": 21
+    },
+    {
+      "username": "Macan",
+      "email": "dfdsfds@gmail.com",
+      "password": "12345678",
+      "phone": "0182912912121",
+      "id": 22
+    },
+    {
+      "username": "",
+      "id": 23
+    },
+    {
+      "username": "",
+      "id": 24
+    },
+    {
+      "id": 25
+    },
+    {
+      "id": 26
+    },
+    {
+      "username": "anjir zoro",
+      "password": "sdfsdfsd",
+      "email": "2313123",
+      "phone": "243243243",
+      "id": 27
+    },
+    {
+      "username": "anjir zoro",
+      "password": "sdfsdfsd",
+      "email": "2313123",
+      "phone": "243243243",
+      "id": 28
+    },
+    {
+      "username": "hoeoeoeo",
+      "password": "dfdfddsf",
+      "email": "eewewrewr",
+      "phone": "112121212",
+      "id": 29
+    },
+    {
+      "username": "lfpdlfpdlfpfl lolo bro 123234",
+      "password": "dfsfsfsd",
+      "email": "lkfdoskfodskf@slgmdfokgogk.colp",
+      "phone": "22323232999999",
+      "id": 30
+    },
+    {
+      "username": "lfpdlfpdlfpfl lolo bro 123234",
+      "password": "dfsfsfsd",
+      "email": "lkfdoskfodskf@slgmdfokgogk.colp",
+      "phone": "22323232999999",
+      "id": 31
+    },
+    {
+      "username": "Mugiwara",
+      "email": "mugiwara123@do.com",
+      "password": "12345678",
+      "phone": "999999",
+      "id": 32
+    }
+  ],
+  "Pupuk": [
+    {
+      "nama": "2",
+      "qty": "",
+      "harga": "",
+      "id": 1
+    },
+    {
+      "nama": "Jaket Pria 2",
+      "merk": "Spetnaz",
+      "harga": 1000000,
+      "deskripsi": "Bahan tidak mudah panas",
+      "img": "http://subject09.web.id/wp-content/uploads/2017/07/redmango-1024x689.jpg",
+      "id": 2
+    },
+    {
+      "nama": "Kemeja Pria Merah",
+      "merk": "Spetnaz",
+      "harga": 2000000,
+      "deskripsi": "mahal tapi bagus.",
+      "img": "https://apollo-singapore.akamaized.net/v1/files/cc027vdd53rf3-ID/image;s=966x691;olx-st/_1_.jpg",
+      "id": 3
+    },
+    {
+      "nama": "Jaket Abu abu",
+      "harga": 3000000,
+      "merk": "Air Soft Company",
+      "deskripsi": "dengan bahan ini sangat membantu Anda",
+      "img": "https://gd.image-gmkt.com/2017-NEW-CASUAL-JACKETS-MEN-S-KOREAN-CLOTHES-MEN-S-SPRING-COAT/li/292/894/868894292.g_400-w_g.jpg",
+      "id": 4
+    },
+    {
+      "nama": "Jaket Abu abu (2)",
+      "harga": 3200000,
+      "merk": "Air Soft Company",
+      "deskripsi": "dengan bahan import dari Mars",
+      "img": "https://ae01.alicdn.com/kf/HTB1K1gYHFXXXXb.XXXXq6xXFXXXK/220697366/HTB1K1gYHFXXXXb.XXXXq6xXFXXXK.jpg",
+      "id": 5
+    },
+    {
+      "nama": "Jaket Hitam",
+      "harga": 3700000,
+      "merk": "Spetnaz",
+      "deskripsi": "Bahan dingin",
+      "img": "https://gd.image-gmkt.com/LEX-MEN-JACKET-SPRING-AUTUMN-JACKET-RAINCOAT-WATERPROOF-JACKET-OUTDOOR/ai/361/934/1118934361_00.g_400-w-st_g.jpg",
+      "id": 6
+    },
+    {
+      "nama": "Kaos Hitam Polos ",
+      "harga": 1000000,
+      "merk": "Spetnaz",
+      "deskripsi": "Simple",
+      "img": "https://www.jakartanotebook.com/images/products/99/63/19075/2/kaos-polos-katun-pria-o-neck-size-m-81402b-or-t-shirt-black-24.jpg",
+      "id": 7
+    },
+    {
+      "nama": "Jaket Biru",
+      "harga": 4000000,
+      "merk": "Air Soft Company",
+      "deskripsi": "Cocok Untuk musim Dingin",
+      "img": "https://ae01.alicdn.com/kf/HTB12GvZOXXXXXb2XpXXq6xXFXXX6/2018-New-Jackets-Parka-Men-Hot-Sale-Quality-Autumn-Winter-Warm-Outwear-Brand-Slim-Mens-Coats.jpg",
+      "id": 8
+    },
+    {
+      "nama": "Kemeja Biru",
+      "harga": 3700000,
+      "merk": "Corazon",
+      "deskripsi": "Untuk mantenan",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6A9ItEowMIpVUGCblaoUxh5TFaGmAyJ6J7pym4Y0VieND1C2j",
+      "id": 9
+    },
+    {
+      "nama": "Kemeja Putih",
+      "harga": 4000000,
+      "merk": "Air Soft Company",
+      "deskripsi": "Baju semi formal",
+      "img": "https://www.bigjoe.it/24309-product_scene/edd-korean-collar-shirt.jpg",
+      "id": 10
+    }
+  ],
+  "keranjangtes": [
+    {
+      "id": 1,
+      "idUsers": 3,
+      "idProduk": 1,
+      "harga": [
+        1500000,
+        3700000
+      ],
+      "qty": 1,
+      "totalHarga": 1500000,
+      "namaProduk": [
+        "Jaket Pria",
+        "Kemeja Biru"
+      ]
+    },
+    {
+      "id": 2,
+      "idUsers": 1,
+      "idProduk": 2,
+      "harga": [
+        1000000
+      ],
+      "qty": 1,
+      "totalHarga": 1000000,
+      "namaProduk": [
+        "Jaket Pria 2"
+      ]
+    },
+    {
+      "id": 3,
+      "idUsers": 2,
+      "idProduk": 10,
+      "harga": [
+        4000000
+      ],
+      "qty": 1,
+      "totalHarga": 4000000,
+      "namaProduk": [
+        "Kemeja Putih"
+      ]
+    },
+    {
+      "id": 1,
+      "idUsers": 3,
+      "idProduk": 1,
+      "harga": [
+        1500000,
+        3700000
+      ],
+      "qty": 1,
+      "totalHarga": 1500000,
+      "namaProduk": [
+        "Jaket Pria",
+        "Kemeja Biru"
+      ]
+    }
+  ],
+  "keranjang2": [
+    {
+      "id": 1,
+      "idUsers": 1,
+      "idProduk": 1,
+      "harga": 1500000,
+      "qty": 1,
+      "totalHarga": 1500000,
+      "namaProduk": [
+        "Jaket Pria",
+        "Jaket Pria 2"
+      ]
+    }
+  ],
+  "keranjang": [
+    {
+      "id": 1,
+      "idUsers": 3,
+      "idProduk": 1,
+      "harga": 1500000,
+      "qty": 1,
+      "totalHarga": 1500000,
+      "namaProduk": "Jaket Pria"
+    },
+    {
+      "id": 2,
+      "idUsers": 1,
+      "idProduk": 2,
+      "harga": 1000000,
+      "qty": 1,
+      "totalHarga": 1000000,
+      "namaProduk": "Jaket Pria 2"
+    },
+    {
+      "id": 3,
+      "idUsers": 2,
+      "idProduk": 10,
+      "harga": 4000000,
+      "qty": 1,
+      "totalHarga": 4000000,
+      "namaProduk": "Kemeja Putih"
+    },
+    {
+      "id": 4,
+      "idUsers": 3,
+      "idProduk": 1,
+      "harga": 1500000,
+      "qty": 1,
+      "totalHarga": 1500000,
+      "namaProduk": "Jaket Pria"
+    },
+    {
+      "id": 5,
+      "idUsers": 3,
+      "idProduk": 6,
+      "harga": 3700000,
+      "qty": 1,
+      "totalHarga": 3700000,
+      "namaProduk": "Jaket Hitam"
+    },
+    {
+      "idUsers": 3,
+      "idProduk": 7,
+      "harga": 1000000,
+      "qty": "1",
+      "totalHarga": 1000000,
+      "namaProduk": "Kaos Hitam Polos ",
+      "id": 6
+    },
+    {
+      "idUsers": 3,
+      "idProduk": 2,
+      "harga": 1000000,
+      "qty": "2",
+      "totalHarga": 2000000,
+      "namaProduk": "Jaket Pria 2",
+      "id": 7
+    }
+  ]
+}
