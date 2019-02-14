@@ -14,7 +14,6 @@ import {
     DropdownMenu,
     DropdownItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import Register from './Register';
 import { connect } from 'react-redux';
 import Cookies from 'universal-cookie';
 import axios from 'axios';
@@ -27,7 +26,7 @@ class Headerpertama extends Component {
     state = { filterProduk : [] }
 
     componentDidMount() {
-      axios.get('http://localhost:1996/Pupuk')
+      axios.get('http://localhost:1995/Pupuk')
       .then((res)=>{
         this.setState({ filterProduk : res.data})
         
@@ -84,9 +83,9 @@ class Headerpertama extends Component {
               <NavItem className="nav-item">
                 <Link to="/Register"><NavLink className="nav-link">Register</NavLink></Link>
               </NavItem>
-              <NavItem className="nav-item">
+              {/* <NavItem className="nav-item">
                 <Link to="/List"><NavLink className="nav-link">List</NavLink></Link>
-              </NavItem>
+              </NavItem> */}
               <NavItem className="nav-item">
                 <Link to="/manage"><NavLink className="nav-link">Manage Produk</NavLink></Link>
               </NavItem>
@@ -116,34 +115,31 @@ class Headerpertama extends Component {
                   <span className="sr-only">(current)</span>
                 </a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link" href="/Cart">Lihat Cart</a>
-              </li>
-              <li className="nav-item">
+              </li> */}
+              {/* <li className="nav-item">
                 <a className="nav-link" href="/CHECK-OUT">Check Out</a>
-              </li>
+              </li> */}
               <li className="nav-item">
-                <a className="nav-link" href="/CHECK-OUT">Histori</a>
+                <a className="nav-link" href="/CartList">Lihat Cart (Edit)</a>
               </li>
             </ul>
           </div>
         </div>
         <UncontrolledDropdown nav inNavbar >
                 <DropdownToggle nav caret className="nav-item">
-                  Hello , {this.props.username}
+                  Hello , {this.props.username} 
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem href="/">
                     Home
                   </DropdownItem>
-                  <DropdownItem href="/List">
-                    List
-                  </DropdownItem>
                   <DropdownItem href="/Cart">
                     Cart
                   </DropdownItem>
-                  <DropdownItem href="/manage">
-                    Manage Produk
+                  <DropdownItem href="/listproduk32">
+                    List Produk
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem onClick={this.onLogOutSelect}>
@@ -159,7 +155,7 @@ class Headerpertama extends Component {
 }
 
 const mapStateToProps = (state) => {
-      return { username : state.auth.username , error : state.auth.error }
+      return { username : state.auth.username , error : state.auth.error  }
 }
 
 

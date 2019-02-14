@@ -4,22 +4,28 @@ import { connect } from 'react-redux';
 import Headerpertama from './components/Headerpertama';
 import LoginPertama from './components/LoginPertama';
 import HomePage from './components/HomePage';
-import Register from './components/Register';
 import { Route  } from 'react-router-dom';
-import Contenpertama from './components/Contenpertama';
 import {  withRouter } from 'react-router-dom';
-import Contenkedua from './components/ContenKedua';
 import Registerpertama from './components/Registerpertama.jsx';
-import PopokList from './components/PopokList';
+// import PopokList from './components/PopokList';
 import Cookies from 'universal-cookie';
 import { keepLogin , cookieChecked , Cookie_cart } from './actions/index';
-import ManageProduk from './components/ManageProduk';
+// import ManageProduk from './components/ManageProduk';
 import FilterProduk from './components/FilterProduk';
-import ProdukDetail from './components/ProdukDetail';
-import CartMovie from './components/CartMovie';
+// import ProdukDetail from './components/ProdukDetail';
 import KeranjangBelanja from './components/KeranjangBelanja';
 import LihatCart from './components/LihatCart';
 import CheckOut from './components/CheckOut';
+import LihatCart2 from './components/LihatCart2';
+import test_login_express from './components/test_login_express';
+import ListProduk from './components/ListProduk';
+// import Loginformtes from './components/Loginformtes';
+import Tesregisteremail from './components/Tesregisteremail';
+import Manageproduk2 from './components/Manageproduk2';
+import ListProdukdetail32 from './components/ListProdukdetail32';
+import Cart32 from './components/Cart32';
+import AdminAddProduk from './components/AdminAddProduk';
+import AdminKonfirmasi from './components/AdminKonfirmasi'
 // import Header from './Projek/Header';
 // import Navbar from './Projek/Navbar';
 // import './Projek/style/vendor/animsition/css/animsition.css';
@@ -62,14 +68,22 @@ class App extends Component {
             <Route path="/Login" component={LoginPertama}/>
             <Route  exact path="/" component={HomePage} />
             <Route path="/Register" component={Registerpertama} />
-            <Route path="/google" component={Contenpertama} />
-            <Route path="/List" component={PopokList} />
-            <Route path="/manage" component={ManageProduk} />
+            {/* <Route path="/List" component={PopokList} /> */}
+            {/* <Route path="/manage" component={ManageProduk} /> */}
             <Route path="/Filter" component={FilterProduk} />
-            <Route path="/Detail" component={ProdukDetail} />
+            {/* <Route path="/Detail" component={ProdukDetail} /> */}
             <Route path="/Cart" component={LihatCart} />
             <Route path="/Keranjang" component={KeranjangBelanja} />
             <Route path="/CHECK-OUT" component={CheckOut} />
+            <Route path="/CartList" component={LihatCart2} />
+            <Route path="/tesUser" component={test_login_express} />
+            <Route path="/listproduk32" component={ListProduk} />
+            {/* <Route path="/logintes" component={Loginformtes} /> */}
+            <Route path="/emailregister" component={Tesregisteremail} />
+            <Route path="/detail32" component={ListProdukdetail32} />
+            <Route path="/cart32" component={Cart32} />
+            <Route path="/AdminProduk" component={AdminAddProduk} />
+            <Route path="/konfimasi"  component={AdminKonfirmasi}/>
           </div> 
            {/* <Header /> */}
           {/* <Navbar /> */}

@@ -1,6 +1,6 @@
 import React , { Component } from 'react';
 import { connect } from 'react-redux';
-import { onUserRegister } from '../actions';
+import { TesRegister } from '../actions';
 import Cookies from 'universal-cookie';
 import { Redirect } from 'react-router-dom'
 import './css/Login_v13/css/main.css';
@@ -47,12 +47,18 @@ class Registerpertama extends Component {
       var username = this.refs.name.value;
       var email = this.refs.email.value;
       var password = this.refs.password.value;
-      var phone = this.refs.phone.value;
-      this.props.onUserRegister({
-        username : username, 
+      
+      // this.props.onUserRegister({
+      //   nama : username, 
+      //   email : email , 
+      //   password : password ,
+      //   role : 'user'
+      //   })
+      this.props.TesRegister({
+        nama : username, 
         email : email , 
-        password : password , 
-        phone : phone})
+        password : password 
+        })
     }
     render() {
       if(this.props.username === ''){
@@ -86,11 +92,11 @@ class Registerpertama extends Component {
                 <input className="input100" type="text" name="pass" placeholder="*************" ref="password" />
                 <span className="focus-input100" />
               </div>
-              <div className="wrap-input100 validate-input" data-validate="Repeat Password is required">
+              {/* <div className="wrap-input100 validate-input" data-validate="Repeat Password is required">
                 <span className="label-input100">Phone Number</span>
                 <input className="input100" type="number" name="Phone-Number" placeholder="*************" ref="phone" />
                 <span className="focus-input100" />
-              </div>
+              </div> */}
               <div className="flex-m w-full p-b-33">
                 {/* <div className="contact100-form-checkbox">
                   <input className="input-checkbox100" id="ckb1" type="checkbox" name="remember-me" />
@@ -141,4 +147,4 @@ const mapStateToProps = (state) => {
 
 
 
-export default connect(mapStateToProps, {    onUserRegister ,   } )(Registerpertama);
+export default connect(mapStateToProps, {    TesRegister   } )(Registerpertama);

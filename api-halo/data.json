@@ -210,12 +210,6 @@
   ],
   "Pupuk": [
     {
-      "nama": "2",
-      "qty": "",
-      "harga": "",
-      "id": 1
-    },
-    {
       "nama": "Jaket Pria 2",
       "merk": "Spetnaz",
       "harga": 1000000,
@@ -270,14 +264,6 @@
       "deskripsi": "Cocok Untuk musim Dingin",
       "img": "https://ae01.alicdn.com/kf/HTB12GvZOXXXXXb2XpXXq6xXFXXX6/2018-New-Jackets-Parka-Men-Hot-Sale-Quality-Autumn-Winter-Warm-Outwear-Brand-Slim-Mens-Coats.jpg",
       "id": 8
-    },
-    {
-      "nama": "Kemeja Biru",
-      "harga": 3700000,
-      "merk": "Corazon",
-      "deskripsi": "Untuk mantenan",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6A9ItEowMIpVUGCblaoUxh5TFaGmAyJ6J7pym4Y0VieND1C2j",
-      "id": 9
     },
     {
       "nama": "Kemeja Putih",
@@ -423,6 +409,123 @@
       "totalHarga": 2000000,
       "namaProduk": "Jaket Pria 2",
       "id": 7
+    },
+    {
+      "idUsers": 3,
+      "idProduk": 3,
+      "harga": 2000000,
+      "qty": "1",
+      "totalHarga": 2000000,
+      "namaProduk": "Kemeja Pria Merah",
+      "id": 8
+    },
+    {
+      "idUsers": 3,
+      "idProduk": 4,
+      "harga": 3000000,
+      "qty": "5",
+      "totalHarga": 15000000,
+      "namaProduk": "Jaket Abu abu",
+      "id": 9
+    },
+    {
+      "idUsers": 3,
+      "idProduk": 9,
+      "harga": 3700000,
+      "qty": "1",
+      "totalHarga": 3700000,
+      "namaProduk": "Kemeja Biru",
+      "id": 10
+    },
+    {
+      "idUsers": 3,
+      "idProduk": 5,
+      "harga": 3200000,
+      "qty": "10",
+      "totalHarga": 32000000,
+      "namaProduk": "Jaket Abu abu (2)",
+      "id": 11
+    },
+    {
+      "idUsers": 1,
+      "idProduk": 7,
+      "harga": 1000000,
+      "qty": "10",
+      "totalHarga": 10000000,
+      "namaProduk": "Kaos Hitam Polos ",
+      "id": 12
+    },
+    {
+      "idUsers": 1,
+      "idProduk": 3,
+      "harga": 2000000,
+      "qty": "1",
+      "totalHarga": 2000000,
+      "namaProduk": "Kemeja Pria Merah",
+      "id": 13
+    },
+    {
+      "idUsers": 1,
+      "idProduk": 10,
+      "harga": 4000000,
+      "qty": "1",
+      "totalHarga": 4000000,
+      "namaProduk": "Kemeja Putih",
+      "id": 14
+    },
+    {
+      "idUsers": 1,
+      "idProduk": 6,
+      "harga": 3700000,
+      "qty": "1",
+      "totalHarga": 3700000,
+      "namaProduk": "Jaket Hitam",
+      "id": 15
+    },
+    {
+      "idUsers": 32,
+      "idProduk": 4,
+      "harga": 3000000,
+      "qty": "10",
+      "totalHarga": 30000000,
+      "namaProduk": "Jaket Abu abu",
+      "id": 16
+    },
+    {
+      "idUsers": 32,
+      "idProduk": 6,
+      "harga": 3700000,
+      "qty": "5",
+      "totalHarga": 18500000,
+      "namaProduk": "Jaket Hitam",
+      "id": 17
+    },
+    {
+      "idUsers": 32,
+      "idProduk": 2,
+      "harga": 1000000,
+      "qty": "1",
+      "totalHarga": 1000000,
+      "namaProduk": "Jaket Pria 2",
+      "id": 18
+    },
+    {
+      "idUsers": 32,
+      "idProduk": 8,
+      "harga": 4000000,
+      "qty": "1",
+      "totalHarga": 4000000,
+      "namaProduk": "Jaket Biru",
+      "id": 19
+    },
+    {
+      "idUsers": 3,
+      "idProduk": 8,
+      "harga": 4000000,
+      "qty": 1,
+      "totalHarga": 4000000,
+      "namaProduk": "Jaket Biru",
+      "id": 20
     }
   ]
 }

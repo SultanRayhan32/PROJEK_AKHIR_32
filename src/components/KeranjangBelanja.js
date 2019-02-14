@@ -41,9 +41,9 @@ class KeranjangBelanja extends Component {
         var idProduk = this.props.id;
         var harga = this.props.harga;
         var qty  = this.refs.qty.value;
-        var totalHarga = qty * harga;
+        var totalHarga = parseInt(qty * harga);
         var namaProduk = this.props.namaProduknya;
-        
+        var img = this.props.image;
         // console.log(idUsers + ' ' + idProduk + ' ' + harga + ' ' + qty + ' ' + totalHarga + ' ' + namaProduk) 
        this.props.addNewCart({
         idUsers : idUsers ,
@@ -152,7 +152,9 @@ class KeranjangBelanja extends Component {
         // return CartJsx
         var ListJsxCart = this.state.AllCartValue.map((res)=>{
             if(res.idUsers === this.props.idUser){
-                return(<div>{res.harga}{res.namaProduk}<LihatCart harga={res.harga} id22={res.id} /></div>)
+                return(<div>{res.harga}{res.namaProduk}
+                {/* <LihatCart harga={res.harga} id22={res.id} /> */}
+                </div>)
             }
             
         })

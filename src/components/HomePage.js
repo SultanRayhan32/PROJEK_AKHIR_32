@@ -6,7 +6,7 @@ import { Cookie_cart } from '../actions/index'
 class HomePage extends Component {
     state = { listpopok : [] }
     componentDidMount() {
-        axios.get('http://localhost:1999/Pupuk')
+        axios.get('http://localhost:1995/Pupuk')
         .then((res) => {
             console.log(res.data)
             // this.setState({ listpopok : res.data })

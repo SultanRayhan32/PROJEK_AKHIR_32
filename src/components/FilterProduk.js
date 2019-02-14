@@ -7,7 +7,7 @@ class FilterProduk extends Component {
     state = { ListProduk : [] , FilterForProduk : [] , hanyabiasa : 'oe' , filterUtkTampung : [] }
 
     componentDidMount() {
-        axios.get('http://localhost:1996/Pupuk')
+        axios.get('http://localhost:1995/Pupuk')
         .then((res)=>{
             this.setState({ListProduk : res.data})
             // this.setState({FilterForProduk : res.data})

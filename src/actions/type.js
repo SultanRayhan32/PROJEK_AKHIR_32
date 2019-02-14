@@ -6,6 +6,7 @@ export const REGISTER_LOGIN = 'REGISTER_LOGIN';
 export const LogOut = 'LOGOUT';
 export const COOKIE_CHECKED = 'LOL';
 export const SELECT_POPOK = 'sasukeh';
+export const SELECT_PRODUK = 'SDFDSFDSSSDSFDSFDSFDF';
 export const MOVIE_SUCCESS = 'SFDFFDSFDSF';
 export const SELECT_MOVIE = 'FDSFSDFDSFFD';
 export const CART_SUCCESS = 'CART_SUCCESS';

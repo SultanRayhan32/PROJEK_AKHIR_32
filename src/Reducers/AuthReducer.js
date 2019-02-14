@@ -1,5 +1,5 @@
 import { USER_LOGIN_SUCCES,  AUTH_SYSTEM_ERROR , AUTH_LOADING , LogOut , REGISTER_LOGIN ,COOKIE_CHECKED, MOVIE_SUCCESS , ADD_CART_SUCCESS } from '../actions/type';
-const INITIAL_STATE = { username : '', error : '' , loading : false , cookie : false , email : '' ,img : '' , id : 0 };
+const INITIAL_STATE = { username : '', error : '' , loading : false , cookie : false , email : '' ,img : '' , id : 0 , role : '' };
 
 export default (state = INITIAL_STATE ,action) => {
     switch(action.type) {
@@ -8,6 +8,7 @@ export default (state = INITIAL_STATE ,action) => {
                 username : action.payload.username, 
                 email: action.payload.email , 
                 id : action.payload.id ,
+                role : action.payload.role ,
                 cookie : true};
        case AUTH_SYSTEM_ERROR :
             return {...INITIAL_STATE , error : action.payload , cookie : true}
