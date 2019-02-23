@@ -99,6 +99,61 @@ class Headerpertama extends Component {
             </div>
         )
       }
+      else if(this.props.role === 'admin'){
+        return(<div>
+                
+          <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div className="container">
+    <a className="navbar-brand" href="/">Home</a>
+    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon" />
+    </button>
+    <div className="collapse navbar-collapse" id="navbarResponsive">
+      <ul className="navbar-nav ml-auto">
+        {/* <li className="nav-item active">
+          <a className="nav-link" href="/">Home
+            <span className="sr-only">(current)</span>
+          </a>
+        </li> */}
+        {/* <li className="nav-item">
+          <a className="nav-link" href="/Cart">Lihat Cart</a>
+        </li> */}
+        {/* <li className="nav-item">
+          <a className="nav-link" href="/CHECK-OUT">Check Out</a>
+        </li> */}
+        <li className="nav-item">
+          <a className="nav-link" href="/konfimasi">Konfirmasi Pembayaran</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/AdminProduk">Manage Produk</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/Histori">Histori</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <UncontrolledDropdown nav inNavbar >
+          <DropdownToggle nav caret className="nav-item">
+            Hello, Admin 
+          </DropdownToggle>
+          <DropdownMenu right>
+            <DropdownItem href="/">
+              Home
+            </DropdownItem>
+            <DropdownItem href="/listproduk32">
+              List Produk
+            </DropdownItem>
+            <DropdownItem divider />
+            <DropdownItem onClick={this.onLogOutSelect}>
+              Logout
+            </DropdownItem>
+          </DropdownMenu>
+        </UncontrolledDropdown>
+</nav>
+        
+    </div>)
+      }
         return(
             <div>
                 
@@ -111,7 +166,7 @@ class Headerpertama extends Component {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
-                <a className="nav-link" href="#">Home
+                <a className="nav-link" href="/">Home
                   <span className="sr-only">(current)</span>
                 </a>
               </li>
@@ -122,7 +177,13 @@ class Headerpertama extends Component {
                 <a className="nav-link" href="/CHECK-OUT">Check Out</a>
               </li> */}
               <li className="nav-item">
-                <a className="nav-link" href="/CartList">Lihat Cart (Edit)</a>
+                <a className="nav-link" href="/cart32">Lihat Cart</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/listproduk32">List Produk</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/Histori">Histori</a>
               </li>
             </ul>
           </div>
@@ -134,9 +195,6 @@ class Headerpertama extends Component {
                 <DropdownMenu right>
                   <DropdownItem href="/">
                     Home
-                  </DropdownItem>
-                  <DropdownItem href="/Cart">
-                    Cart
                   </DropdownItem>
                   <DropdownItem href="/listproduk32">
                     List Produk
@@ -155,7 +213,7 @@ class Headerpertama extends Component {
 }
 
 const mapStateToProps = (state) => {
-      return { username : state.auth.username , error : state.auth.error  }
+      return { username : state.auth.username , error : state.auth.error , role : state.auth.role }
 }
 
 

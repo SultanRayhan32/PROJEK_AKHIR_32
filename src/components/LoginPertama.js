@@ -27,8 +27,8 @@ class LoginPertama extends Component {
    
 
     onBtnLoginClick = () => {
-        var username = this.refs.username.refs.tbUsername.value;
-        var password = this.refs.password.refs.tbPassword.value;
+        var username = this.refs.username.value;
+        var password = this.refs.password.value;
         this.props.onUserLogin({username, password})
     }
 
@@ -43,10 +43,10 @@ class LoginPertama extends Component {
         if(this.props.loading) {
             return <h2>Loading...fsggsfd</h2>
         }
-        return <Button color="success" onClick={this.onBtnLoginClick}>Login</Button>
-    //     return <button className="login100-form-btn" onClick={this.onBtnLoginClick}>
-    //     Login
-    //   </button>
+        // return <Button color="success" onClick={this.onBtnLoginClick}>Login</Button>
+        return <button className="login100-form-btn" onClick={this.onBtnLoginClick}>
+        Login
+      </button>
     }
 
     render() {
@@ -54,67 +54,69 @@ class LoginPertama extends Component {
             return(
                 
                 
-        //     <div className="limiter">
-        // <div className="container-login100">
-        //   <div className="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
-        //     <form className="login100-form validate-form flex-sb flex-w">
-        //       <span className="login100-form-title p-b-32">
-        //         Account Login
-        //       </span>
-        //       <span className="txt1 p-b-11">
-        //         Username
-        //       </span>
-        //       <div className="wrap-input100 validate-input m-b-36" >
-        //         <input className="input100" type="text"  ref="username"  />
-        //         <span className="focus-input100" />
-        //       </div>
-        //       <span className="txt1 p-b-11">
-        //         Password
-        //       </span>
-        //       <div className="wrap-input100 validate-input m-b-12" >
-        //         <span className="btn-show-pass">
-        //           <i className="fa fa-eye" />
-        //         </span>
-        //         <input className="input100" type="text"   ref="password"  />
-        //         <span className="focus-input100" />
-        //       </div>
-        //       <div className="flex-sb-m w-full p-b-48">
-        //         <div className="contact100-form-checkbox">
-        //           {/* <input className="input-checkbox100" id="ckb1" type="checkbox" name="remember-me" />
-        //           <label className="label-checkbox100" htmlFor="ckb1">
-        //             Remember me
-        //           </label> */}
-        //         </div>
-        //         {/* <div>
-        //           <a href="#" className="txt3">
-        //             Forgot Password?
-        //           </a>
-        //         </div> */}
-        //       </div>
-        //       <div className="container-login100-form-btn">
-        //       {this.renderError()}
-        //       {this.renderButton()}
+            <div className="limiter">
+        <div className="container-login100">
+          <div className="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+            <form className="login100-form validate-form flex-sb flex-w">
+              <span className="login100-form-title p-b-32">
+                Account Login
+              </span>
+              <span className="txt1 p-b-11">
+                Username
+              </span>
+              <div className="wrap-input100 validate-input m-b-36" >
+                <input className="input100" type="text"  ref="username"  />
+                <span className="focus-input100" />
+              </div>
+              <span className="txt1 p-b-11">
+                Password
+              </span>
+              <div className="wrap-input100 validate-input m-b-12" >
+                <span className="btn-show-pass">
+                  <i className="fa fa-eye" />
+                </span>
+                <input className="input100" type="password"   ref="password"  />
+                <span className="focus-input100" />
+              </div>
+              <div className="flex-sb-m w-full p-b-48">
+                <div className="contact100-form-checkbox">
+                  {/* <input className="input-checkbox100" id="ckb1" type="checkbox" name="remember-me" />
+                  <label className="label-checkbox100" htmlFor="ckb1">
+                    Remember me
+                  </label> */}
+                </div>
+                {/* <div>
+                  <a href="#" className="txt3">
+                    Forgot Password?
+                  </a>
+                </div> */}
+              </div>
+              <div className="container-login100-form-btn">
+              {this.renderError()}
+              {this.renderButton()}
                 
-        //       </div>
-        //     </form>
-        //   </div>
-        // </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        </div>
+        
       
       
-                     <div className={"col-3"} style={{margin : '0 auto', paddingTop : "50px"}}>
-                        <Form className="col-xs-3">
-                            <FormGroup>
-                            <Label for="exampleEmail">Username</Label>
-                            <Input type="email" name="username" ref="username" innerRef="tbUsername" id="exampleEmail" placeholder="with a placeholder" />
-                            </FormGroup>
-                            <FormGroup>
-                            <Label for="examplePassword">Password</Label>
-                            <Input type="password" name="password" ref="password" innerRef="tbPassword" id="examplePassword" placeholder="password placeholder" />
-                            </FormGroup>
-                            {this.renderError()}
-                            {this.renderButton()}
-                        </Form>
-                    </div> 
+                /* //  <div className={"col-3"} style={{margin : '0 auto', paddingTop : "50px"}}>
+                    //     <Form className="col-xs-3">
+                    //         <FormGroup>
+                    //         <Label for="exampleEmail">Username</Label>
+                    //         <Input type="email" name="username" ref="username" innerRef="tbUsername" id="exampleEmail" placeholder="with a placeholder" />
+                    //         </FormGroup>
+                    //         <FormGroup>
+                    //         <Label for="examplePassword">Password</Label>
+                    //         <Input type="password" name="password" ref="password" innerRef="tbPassword" id="examplePassword" placeholder="password placeholder" />
+                    //         </FormGroup>
+                    //         {this.renderError()}
+                    //         {this.renderButton()}
+                    //     </Form>
+                    // </div>  */
 
                 
             )

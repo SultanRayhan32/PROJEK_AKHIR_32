@@ -1,5 +1,6 @@
 import React , { Component} from 'react';
 import axios from 'axios';
+import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 class AdminKonfimasi extends Component{
@@ -19,6 +20,13 @@ class AdminKonfimasi extends Component{
         
     }
 
+    RenderAgain = () =>{
+        axios.get('http://localhost:2019/admin/getkonfimasi')
+        .then((res)=>{
+            this.setState({ ListKonfirmasi : res.data })
+        })
+        console.log(this.state.idUsers)
+    }
     
 
     AddtoTransaksi = (Id) =>{
@@ -61,6 +69,15 @@ class AdminKonfimasi extends Component{
                     axios.delete(`http://localhost:2019/cart/checkout3?idUsers=${idUsers}`)
                     .then((res)=>{
                         console.log('Berhasil di hapus oeoeoeoeoeoee 1234566y')
+                        axios.delete(`http://localhost:2019/admin/cancelkonfirmasi?id=${idUsers}`)
+                            .then((res)=>{
+                                console.log('hapus konfirm suksess')
+                               {this.RenderAgain()}
+                            })
+                            .catch((err)=>{
+                                console.log('Gagal Cancel')
+                                console.log(err)
+                            })
                     })
                 })
                 .catch((err)=>{
@@ -118,7 +135,7 @@ class AdminKonfimasi extends Component{
                 <th>{item.id}</th>
                 <th>{item.id_users}</th>
                 <th>{item.status}</th>
-                <th><img src={`http://localhost:2019/${item.image}`} /></th>
+                <th><img src={`http://localhost:2019/${item.image}`}  width="50px"/></th>
                 <th><input type="button" class="btn btn-primary" value="Konfirmasi" onClick={()=> this.getAllCartUser(item.id_users)}/></th>
             </tr>)
         })
@@ -127,6 +144,9 @@ class AdminKonfimasi extends Component{
     }
 
     render(){
+        if(this.props.role !== 'admin'){
+            return  <Redirect to="/listproduk32" />
+        }
         return(<div>
             <br/><br/><br/><br/><br/><br/><br/>
             <table>
@@ -147,4 +167,10 @@ class AdminKonfimasi extends Component{
     }
 }
 
-export default AdminKonfimasi;
+const mapStateToProps = (state) =>{
+    return{ 
+        role : state.auth.role 
+    };
+}
+
+export default connect(mapStateToProps , {}) (AdminKonfimasi);

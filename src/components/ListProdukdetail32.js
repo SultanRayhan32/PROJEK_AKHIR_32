@@ -29,7 +29,7 @@ class ListProduk32 extends Component {
             if(res.data.length > 0){
                 axios.post(`http://localhost:2019/cart/editcart?idUsers=${idUsers}&idProduk=${idProduk}&qty=${qty}&totalharga=${totalharga}`)
                 .then((res)=>{
-                    
+                    alert('berhasil di edit')
                     
                 })
                 .catch((err)=>{

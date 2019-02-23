@@ -11,7 +11,7 @@ class ListProdukItem32 extends Component{
     render(){
         var { nama , image , harga , deskripsi } = this.props.produk;
         return(<div onClick={this.onCLickProduk} className={`col-md-4 col-sm-6 portfolio-item`}>
-        <div className="portfolio-link" data-toggle="modal">
+        <div className="portfolio-link" data-toggle="modal" >
             <div className="portfolio-hover">
                 <div className="portfolio-hover-content">
                     <i className="fas fa-plus fa-3x" />

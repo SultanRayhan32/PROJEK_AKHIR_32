@@ -10,7 +10,8 @@ import { USER_LOGIN_SUCCES,
         CART_SUCCESS,
         CART_FAILED,
         ADD_CART_SUCCESS,
-        SELECT_PRODUK } 
+        SELECT_PRODUK,
+        PAGINATION } 
          from './type';
 
 export const GetAllMovies = () => {
@@ -146,6 +147,13 @@ export const select_produk = (selectProduk) =>{
         payload : selectProduk
     }
 }
+
+ export const TesFunction = (awal) =>{
+    return{
+      type : PAGINATION,
+      payload : awal
+    }
+  }
 
 
 export const select_popok = (selectedPopok) => {

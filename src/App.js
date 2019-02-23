@@ -11,10 +11,8 @@ import Registerpertama from './components/Registerpertama.jsx';
 import Cookies from 'universal-cookie';
 import { keepLogin , cookieChecked , Cookie_cart } from './actions/index';
 // import ManageProduk from './components/ManageProduk';
-import FilterProduk from './components/FilterProduk';
 // import ProdukDetail from './components/ProdukDetail';
-import KeranjangBelanja from './components/KeranjangBelanja';
-import LihatCart from './components/LihatCart';
+// import LihatCart from './components/LihatCart';
 import CheckOut from './components/CheckOut';
 import LihatCart2 from './components/LihatCart2';
 import test_login_express from './components/test_login_express';
@@ -25,7 +23,13 @@ import Manageproduk2 from './components/Manageproduk2';
 import ListProdukdetail32 from './components/ListProdukdetail32';
 import Cart32 from './components/Cart32';
 import AdminAddProduk from './components/AdminAddProduk';
-import AdminKonfirmasi from './components/AdminKonfirmasi'
+import AdminKonfirmasi from './components/AdminKonfirmasi';
+import Histori32 from './components/Histori32';
+import AdminManageUser from './components/AdminManageUser';
+import PaginationReactStrap from './components/PaginationReactStrap';
+import testdoangkok from './components/TesRenderProdukPagin'
+import './support/Loader.css';
+import './components/support/paging.css'
 // import Header from './Projek/Header';
 // import Navbar from './Projek/Navbar';
 // import './Projek/style/vendor/animsition/css/animsition.css';
@@ -70,10 +74,9 @@ class App extends Component {
             <Route path="/Register" component={Registerpertama} />
             {/* <Route path="/List" component={PopokList} /> */}
             {/* <Route path="/manage" component={ManageProduk} /> */}
-            <Route path="/Filter" component={FilterProduk} />
+            {/* <Route path="/Filter" component={FilterProduk} /> */}
             {/* <Route path="/Detail" component={ProdukDetail} /> */}
-            <Route path="/Cart" component={LihatCart} />
-            <Route path="/Keranjang" component={KeranjangBelanja} />
+            {/* <Route path="/Cart" component={LihatCart} /> */}
             <Route path="/CHECK-OUT" component={CheckOut} />
             <Route path="/CartList" component={LihatCart2} />
             <Route path="/tesUser" component={test_login_express} />
@@ -84,18 +87,21 @@ class App extends Component {
             <Route path="/cart32" component={Cart32} />
             <Route path="/AdminProduk" component={AdminAddProduk} />
             <Route path="/konfimasi"  component={AdminKonfirmasi}/>
+            <Route path="/Histori"  component={Histori32}/>
+            <Route path="/manageUser" component={AdminManageUser} />
+            <Route path="/Paging" component={PaginationReactStrap} />
+            <Route path="/tesanjir" component={testdoangkok} />
           </div> 
            {/* <Header /> */}
           {/* <Navbar /> */}
+          
         </div>
       
     );
     }
     return (
       <div>
-        <center>
-          <h1>Loading...</h1>
-        </center>
+        <div class="loader">Loading...</div>
       </div>
     )
     var { content , akhir , apa , inputnama } = this.state;

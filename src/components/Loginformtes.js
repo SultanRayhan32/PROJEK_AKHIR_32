@@ -1,14 +1,14 @@
 import React , { Component } from 'react';
-import '../template/Login_v14/vendor/bootstrap/css/bootstrap.min.css';
-import '../template/Login_v14/fonts/font-awesome-4.7.0/css/font-awesome.min.css';
-import '../template/Login_v14/fonts/Linearicons-Free-v1.0.0/icon-font.min.css';
-import '../template/Login_v14/vendor/animate/animate.css';
-import '../template/Login_v14/vendor/css-hamburgers/hamburgers.min.css';
-import '../template/Login_v14/vendor/animsition/css/animsition.min.css';
-import '../template/Login_v14/vendor/select2/select2.min.css';
-import '../template/Login_v14/vendor/daterangepicker/daterangepicker.css';
-import '../template/Login_v14/css/util.css';
-import '../template/Login_v14/css/main.css';
+// import '../template/Login_v14/vendor/bootstrap/css/bootstrap.min.css';
+// import '../template/Login_v14/fonts/font-awesome-4.7.0/css/font-awesome.min.css';
+// import '../template/Login_v14/fonts/Linearicons-Free-v1.0.0/icon-font.min.css';
+// import '../template/Login_v14/vendor/animate/animate.css';
+// import '../template/Login_v14/vendor/css-hamburgers/hamburgers.min.css';
+// import '../template/Login_v14/vendor/animsition/css/animsition.min.css';
+// import '../template/Login_v14/vendor/select2/select2.min.css';
+// import '../template/Login_v14/vendor/daterangepicker/daterangepicker.css';
+// import '../template/Login_v14/css/util.css';
+// import '../template/Login_v14/css/main.css';
 
 
 class loginformtes extends Component {

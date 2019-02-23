@@ -6,13 +6,25 @@ import { CustomInput } from 'reactstrap';
 
 class AdminAddProduk extends Component{
 
-    state ={  ListProduk : [] , SelectEdit : 0  }
+    state ={  ListProduk : [] , SelectEdit : 0 , ListKategori : [] ,SelectEdit2 : 0 }
 
     componentDidMount(){
         axios.get('http://localhost:2019/produk/showproduk')
         .then((res)=>{
             this.setState({ ListProduk : res.data })
             
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+
+        axios.get('http://localhost:2019/kategori/getAllKategori')
+        .then((res)=>{
+            this.setState({ ListKategori : res.data })
+            console.log(res.data)
+        })
+        .catch((err)=>{
+            console.log(err)
         })
     }
 
@@ -131,8 +143,8 @@ class AdminAddProduk extends Component{
     }
 
     SelectOptionAllKategori = () =>{
-        var c = this.state.ListProduk.map((item)=>{
-            return(<option>{item.kategori}</option>)
+        var c = this.state.ListKategori.map((item)=>{
+            return(<option>{item.nama}</option>)
         })
         return c;
     }
@@ -169,14 +181,77 @@ class AdminAddProduk extends Component{
         return x;
     }
 
+    renderAllKategori = () =>{
+      
+        var y = this.state.ListKategori.map((item)=>{
+            if(this.state.SelectEdit2 === item.id){
+                return(
+                    <tr>
+                       <td>{item.id}</td>
+                       <td><input defaultValue={item.nama} className="inputs" ref="editnewkategori" /></td>
+                       <td><input type="button"   class="btn btn-primary" value="SAVE" onClick={() => this.UpdateKategori(item.id)}/></td>
+                       <td><input type="button" class="btn btn-danger" value="CANCEL" onClick={ () => this.setState({ SelectEdit2 : 0 }) } /></td>
+                    </tr>)
+            }
+            return(
+            <tr>
+               <td>{item.id}</td>
+               <td>{item.nama}</td>
+               <td><input type="button" onClick={ () => this.setState({ SelectEdit2 : item.id }) }  class="btn btn-primary" value="EDIT"/></td>
+               <td></td>
+            </tr>)
+        })
+        return y;
+    }
+
+    UpdateKategori = (id) =>{
+        var newKategori = this.refs.editnewkategori.value;
+        axios.post(`http://localhost:2019/kategori/EditKategori?id=${id}&nama=${newKategori}`)
+        .then((res)=>{
+            alert('Suksesss')
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+    }
+
+    AddNewKategori = () =>{
+        var newAddKategori = this.refs.newkategori.value;
+        axios.post(`http://localhost:2019/kategori/AddNewKategori?nama=${newAddKategori}`)
+        .then((res)=>{
+            alert('Berhasil')
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+    }
+
+    FilterProduk = () =>{
+        var nama = this.refs.namafilter.value;
+        axios.get(`http://localhost:2019/admin/filterproduk?nama=${nama}`)
+        .then((res)=>{
+            this.setState({ ListProduk : res.data })
+        })
+    }
+
     
 
     render(){
         if(this.props.role !== 'admin'){
             return  <Redirect to="/listproduk32" />
         }
-        
+        else if(this.state.ListProduk.length === 0) {
+            return(<div>
+                <br/><br/><br/><br/><br/>
+                <input type="text"  className="form-control" ref="namafilter" />
+                <input type="button" value="Cari" className="btn btn-success" onClick={this.FilterProduk} />
+                <h1>Tidak Ditemukan File Yang Anda Inginkan</h1>
+            </div>)
+        }
         return(<div>
+            <br/><br/><br/><br/>
+            <input type="text" className="form-control" ref="namafilter" />
+            <input type="button" value="Cari" className="btn btn-success" onClick={this.FilterProduk} />
             <br/><br/><br/><br/>
         <center>
             <table>
@@ -205,7 +280,7 @@ class AdminAddProduk extends Component{
                         <th><select ref="Addmerk"><option>Mie</option></select></th>
                         <th><input type="text" className="inputs" ref="Adddes" /></th>
                         <th><CustomInput type="file" id="AddBrandImage" name="AddBrandImage" label={this.state.AddBrandImage} onChange={this.onAddFileImageChange} /></th>
-                        <th><select ref="Addkategori"><option>Makanan</option></select></th>
+                        <th><select ref="Addkategori">{this.SelectOptionAllKategori()}</select></th>
                         <th><input type="button" onClick={this.onBtnAddClick} class="btn btn-primary" value="ADD" /></th>
                         <th></th>
                         
@@ -213,8 +288,32 @@ class AdminAddProduk extends Component{
                 </tfoot>
             </table>
         </center>
-            
-        <input type="button" onClick={this.tesFunction} class="btn btn-primary" value="ADD" />
+            <br/><br/><br/>
+        <center>
+            <h3>Manage Kategori</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nama Kategori</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {this.renderAllKategori()}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th><input type="text" className="inputs" ref="newkategori"/></th>
+                        <th><input type="button" onClick={this.AddNewKategori} class="btn btn-primary" value="ADD" /></th>
+                        <th></th>
+                    </tr>
+                </tfoot>    
+            </table>    
+        </center>    
+        <br/><br/><br/>
         </div>)
     }
 }
